@@ -1,0 +1,6 @@
+Interactive house is a project to demonstrate javascript functionality. 
+Click the windows and door of the house to start being interactive. 
+The house will also resize depending on the size of the browser window with functionality remaining intact so feel 
+free to resize the browser.
+
+Open imagemap.html to begin.

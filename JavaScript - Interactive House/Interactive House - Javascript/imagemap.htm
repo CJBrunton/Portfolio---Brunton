@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Wee Hoose in the Heilans</title>
+<link rel="stylesheet" href="css/imagemap.css" type="text/css" />
+<script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script>
+<script src="scripts/script.js"></script>
+</head>
+
+<body id="myBody" onmousedown="displayOptions()" >
+<div id="container">
+
+
+<div id="main">
+<div id="myImage" class="myImage1">
+<img id="crofthouse"  class="fluidimage" src="images/0000.jpg"  title=" All Off " alt="0000"  usemap="#housemap" width="50%" onLoad="setImageHotSpots()" onResize="setImageHotSpots()"/> 
+<map id="mymap" name="housemap"  >
+	<area shape="rect" id="window-1" coords="205,138,255,166" href="javascript:w1();" title=" Top Left " />
+	<area shape="rect" id="window-2" coords="354,138,375,166" href="javascript:w2();" title="Top Right" />
+	<area shape="rect" id="door-1" coords="276,195,299,241" href="javascript:d1();" title="Door" />
+	<area shape="rect" id="window-3" coords="204,193,225,225" href="javascript:w3();" title="Bottom Left" />
+	<area shape="rect" id="window-4" coords="352,193,375,225" href="javascript:w4();"title="Bottom Right" />
+	
+</map></div>
+
+<div id="logDiv" 
+	>
+<div style="margin-left: 10px; margin-top: 5px; width: 200px"><input
+	type="button" value="Close Window" onclick="javascript:location.reload(true)" />&nbsp; <input
+	type="button" value="Play Log" onclick="javascript:play();" /></div>
+<div id="inner" style="margin-left: 10px; margin-top: 5px"
+
+		onmouseover="this.style.background='#0066CC ';
+		this.style.cursor='pointer';"
+		onmouseout="this.style.background='white';"
+		>
+<table id="tablelog">
+<th>
+<div id ="tableheader">
+Window State: 0 Recorded State(s)
+</div>
+</th>
+<tr>
+<td>
+</td>
+</tr>
+</table>
+</div>
+<div id="logDesc"
+	style="height: 30px; border: 1px solid #808080; background-color: #C0C0C0; margin-left: 10px; margin-top: 5px; margin-bottom: 5px; width: 315px; padding-left: 5px; padding-top: 5px">
+</div>
+</div>
+<div style="clear: both"></div>
+<div class="floating-menu"
+	id="fm">
+	
+<h3 style="padding-left: 5px">OPTIONS</h3>
+<ul>
+	<li><a href="javascript:showLog()" > Show Log</a></li>
+	<li><a href="javascript:inactive()">Other Stuff</a></li>
+	
+</ul>
+</div>
+</div>
+
+</div>
+</div>
+</body>
+</html>
+
+

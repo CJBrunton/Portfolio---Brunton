@@ -1,0 +1,5 @@
+Cinema Seats is a coursework from my second year at university. 
+
+It allows the user to select seats for the cinema and then checkout.
+
+Open home.html in a browser to begin.

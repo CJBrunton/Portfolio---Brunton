@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <title>BreatheInFilms</title>
+    <meta charset="utf-8"> 
+	<!--JQuery Library--> 
+<script type ="text/javascript" src = "C:\Users\Jo\Desktop\JQuery\jQuery\jquery.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="Scripts/HomePage.js"></script>
+<script src="Scripts/TwitterWidget.js"></script>
+<link href="Style/Css.css" rel="stylesheet" type="text/css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" 
+      type="image/png" 
+      href="Style/Images/BreatheInFilms.png">
+</script>
+  </head>
+  <style="background-image: url('Style/Images/BreatheInFilmsjpg')"/>
+<body>
+<div class="container">
+<center>
+<img src="Style/Images/BreatheInFilms.png" class="img-rounded" alt="Image" width="1000" height="450"> 
+</center>
+  <ul class="nav nav-tabs nav-justified">
+    <li class="active"><a data-toggle="tab" href="#HOME">HOME</a></li>
+    <li><a data-toggle="tab" href="#ABOUT">ABOUT</a></li>
+	<li><a data-toggle="tab" href="#TWITTERNEWS">TWITTER NEWS</a></li>
+	<li><a data-toggle="tab" href="#SLASHFILM">/FILM</a></li>
+	<li><a data-toggle="tab" href="#COLLECTION">THE COLLETION</a></li>
+  </ul>
+
+<div class="tab-content">
+<div id="HOME" class="tab-pane fade in active">
+		<br>
+		<div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/rWae1mkLJ_Q"></iframe>
+  </div>
+</div>
+	
+<div id="TWITTERNEWS" class="tab-pane fade">
+	  <center>
+	 <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/BreatheInFilms/lists/empire" data-widget-id="609105496453320704">Tweets from https://twitter.com/BreatheInFilms/lists/empire</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> 
+	<a class="twitter-timeline" href="https://twitter.com/BreatheInFilms/lists/total-film" data-widget-id="609108276278636544">Tweets from https://twitter.com/BreatheInFilms/lists/total-film</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	</center>
+</div>
+	
+<div id="ABOUT"class="tab-pane fade">
+	<div id="twitter" class="col-sm-6">
+	<h3>Follow BreatheInFilms on Twitter</h3>
+	<a class="twitter-timeline" href="https://twitter.com/BreatheInFilms" data-widget-id="609111572213051392">Tweets by @BreatheInFilms</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	</div>
+	
+	<div id="textAbout" class="col-sm-6">
+	<h3>About BreatheInFilms </h3>
+	<p>BreatheInFilms provides the movie buffs of the world the ability to keep up to date with a range of movie news from a number of sources, why not check out some of our favourites. It's just the tip of the iceberg.</p>
+	  
+	<!-- Trigger the modal with a button -->
+	<button type="button" class="btn btn-info" data-toggle="modal" data-target="#Favourites">Tip of the Iceberg</button>
+
+	  <!-- Modal -->
+	<div class="modal fade" id="Favourites" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+		  
+          <h4 class="modal-title">Some Favourites</h4>
+        </div>
+        <div class="modal-body">
+		<p>You could play with the big boys over at <a href="http://www.imdb.com">IMDB</a>. Not for you?</p>
+		<p>How about <a href="http://www.slashfilm.com/">/Film</a>
+		Or <a href="http://themovieblog.com/">The Movie Blog</a>? Theres plenty here for you to choose from.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+	</div>
+  
+	</div>
+</div>
+	
+	
+  
+<div id="SLASHFILM"class="tab-pane fade">
+	 <div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="http://www.slashfilm.com/"></iframe>
+	</div>
+</div>
+	
+<div id="COLLECTION" class="tab-pane fade">
+      <h3>THE COLLECTION</h3>
+</div>
+</div>
+</body>
+</html>

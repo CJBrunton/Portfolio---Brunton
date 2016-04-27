@@ -1,0 +1,87 @@
+table {
+	
+	font: 11px/24px Verdana, Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	
+}
+
+th {
+	padding: 0 0.5em;
+	text-align: left;
+	background-color: yellow;
+	border-top: 1px solid red;
+	border-bottom: 1px solid red;
+	
+}
+
+tr.yellow th {
+	border-top: 1px solid red;
+	border-bottom: 1px solid red;
+	background: #FFC;
+}
+
+td {
+	border-bottom: 1px solid #CCC;
+	padding: 0 0.5em;
+}
+
+
+#fm {
+	position:fixed;
+	display: none;
+	width: 100px;
+	margin-left: 400px;
+	margin-top: -575px;
+	background-color: #F0F0F0; 
+	border: 1px solid #909090; 
+
+	
+	}
+
+#logDiv {
+display: none;
+position:fixed;
+right:0px;
+width:360;
+float: right;
+margin-top:-350px;
+margin-right:auto;
+border:1px solid red;
+overflow:hidden;
+
+	}
+	
+#crofthouse{
+
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid red;
+}
+
+
+
+	
+*:focus {
+	outline: none;
+}
+
+ul {
+	padding-left: 5px;
+	padding-right: 15px;
+	list-style: none;
+}
+
+li {
+	width: 85px;
+	margin-left: 5px;
+}
+
+a {
+	text-decoration: none;
+}
+
+a.log:hover {
+	color: red;
+}
+

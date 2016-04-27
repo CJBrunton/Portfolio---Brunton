@@ -1,0 +1,33 @@
+#fm {
+	display: none;
+	position:relative;
+	width: 100px;
+	margin-left: 400px;
+	margin-top: -575px;
+	background-color: #F0F0F0; 
+	border: 1px solid #909090; 
+
+	
+	}
+
+
+
+
+
+
+
+function showLog() {
+
+	
+
+	document.getElementById("logDiv").style.display ="block";
+	$('#logDiv').css('margin-right','1025px');
+	$('#logDiv').css('margin-top','-118px');
+	$('#logDiv').css('width','360px');
+	document.getElementById("fm").style.display="none";
+	$('#crofthouse').css('width','500px');
+    $('#myImage').css('margin-right','1500px');
+    $('#crofthouse').css('margin-top','-220px');
+    
+
+} 
