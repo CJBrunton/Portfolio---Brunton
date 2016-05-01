@@ -1,0 +1,22 @@
+.map{
+
+	width:900px;
+	height:450px;
+}
+
+.results{
+ position: absolute;
+    top: 40px;
+    right: 500px;
+    width: 400px;
+    height: 100px;
+  
+}
+
+.labelsize{
+	font-size: 13px;	
+}
+
+.welllength{
+	width:500px 	
+}

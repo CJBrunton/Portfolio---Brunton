@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+<!-- jQuery library -->
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script src="Scripts/jquery.js"></script>
+ <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  
+
+<!--LocalScripts-->
+
+<script src="Scripts/Map.js"></script>
+<link rel="stylesheet" type="text/css" href="Style/map.css">
+<script>
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+<title>Country Information</title>
+</head>
+
+<body>
+
+<div class="container">
+<div>
+ <div class="col-md-4">
+ <h1><img src="style/images/earth.jpg" alt="Earth" style="width:155pxpx;height:114px;"></h1>
+  
+  <ul class="nav nav-pills">
+    <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+	<li class="active"><a href="#about" data-toggle="modal" data-target="#aboutModal">About</a>
+		
+
+<!-- Modal -->
+<div id="aboutModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4>About</h4>
+      </div>
+      <div class="modal-body">
+        <p>Country Location allows you to search a country to display its currency, population, capital, region and location on the map.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+</li>
+
+	<li><table class="results">
+		<tr>
+		<td><label id="capital" class="label label-success labelsize"></label></td>
+		<td><label id="population" class="label label-success labelsize"></label></td>
+		<td><label id="region" class="label label-success labelsize"></label></td>
+		<td><label id="currency" class="label label-success labelsize"></label></td>
+		</tr></li>
+	
+  </ul>
+
+</div>
+  
+  
+	<div class="tab-content">
+	<br></br>
+    <div id="home" class="tab-pane fade in active">
+	
+     <div class="input-group">
+       <input type="text" id="country" class="form-control"  placeholder="Search for a Country"  />
+	   <div class="input-group-btn">
+      <button class="btn btn-default" type="submit" onclick="countrySearch()"><i class="glyphicon glyphicon-search"></i></button>
+       </div>
+       </div>
+	  
+	<br></br>	
+	<div id="bruntonMap" class="map">
+	</div>
+	
+	
+	
+
+	</div>
+	
+
+    </div>
+      </div>
+</div>
+
+
+
+  
+  
+
+
+</body>
+</html>
